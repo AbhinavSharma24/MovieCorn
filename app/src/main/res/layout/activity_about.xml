@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".Activities.Details"
+        android:background="#E6E2E2"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/abouttoolbar"
+            app:titleTextColor="#E6E2E2"
+            android:background="#1a1a1a"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+    <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="100dp"/>
+
+    <TextView
+            android:textColor="#1a1a1a"
+            android:textSize="55dp"
+            android:text="IMDb Clone"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!--<TextView
+            android:textColor="#1a1a1a"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="30dp"
+            android:text="Powered By :- The Movie Database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+    <TextView
+            android:textColor="#1a1a1a"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:text="Developed By :- ABHINAV SHARMA"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:textColor="#1a1a1a"
+            android:textSize="19sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IMDb Clone is an application that has movie and TV database. This is a database of information related to films, television programs and video games -- including cast, production crew and personal biographies, plot summaries, and ratings."/>
+
+    <TextView
+            android:textColor="#1a1a1a"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="*** Copyright belongs to original owner ***          *** No rights reserved ***"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/credits"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"/>
+
+</LinearLayout>

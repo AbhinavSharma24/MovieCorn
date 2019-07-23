@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:appcompat="http://schemas.android.com/tools">
+
+    <item android:id="@+id/action_profile"
+          android:icon="@drawable/ic_account_circle_black_24dp"
+          android:title="profile"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/app_bar_search"
+          android:icon="@drawable/ic_search_black_24dp"
+          android:title="Search..."
+          app:actionViewClass="android.widget.SearchView"
+          app:showAsAction="always"/>
+
+    <!--<item android:id="@+id/toolbar_search"
+          android:icon="@drawable/searchicon"
+          android:title="Search..."
+          app:showAsAction="ifRoom|withText"
+          app:actionViewClass="android.widget.SearchView"/>-->
+
+</menu>

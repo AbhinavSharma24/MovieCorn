@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".Activities.Details"
+        android:background="#E6E2E2"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar33"
+            app:titleTextColor="#E6E2E2"
+            android:background="#1a1a1a"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"/>
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="280dp"
+            android:layout_marginBottom="300dp"
+            android:minWidth="50dp"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="238dp"
+                    android:id="@+id/toolbarimage"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="5dp"
+                      android:textSize="18sp"
+                      android:id="@+id/tv"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Trailers"
+                      android:layout_marginTop="15dp"
+                      android:textColor="#1a1a1a"
+                      android:gravity="center"
+                      android:layout_marginBottom="10dp"
+                      android:textSize="30sp"
+                      android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/rview3"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Cast"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="10dp"
+                      android:textColor="#1a1a1a"
+                      android:gravity="center"
+                      android:textSize="30sp"
+                      android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/rview"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Similar Movies"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginTop="30dp"
+                      android:textColor="#1a1a1a"
+                      android:gravity="center"
+                      android:textSize="30sp"
+                      android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/rview2"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

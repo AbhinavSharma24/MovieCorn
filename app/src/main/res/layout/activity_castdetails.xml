@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#E6E2E2"
+        tools:context=".Activities.CastDetails"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar11"
+            android:background="#1a1a1a"
+            app:titleTextColor="#E6E2E2"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"/>
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="280dp"
+            android:layout_marginBottom="300dp"
+            android:minWidth="50dp" tools:ignore="MissingConstraints"/>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="250dp"
+                    android:layout_gravity="center"
+                    android:layout_height="250dp"
+                    android:id="@+id/img1"/>
+
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="5dp"
+                      android:maxLines="15"
+                      android:textSize="16sp"
+                      android:layout_marginLeft="5dp"
+                      android:id="@+id/tv" />
+
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E6E2E2"
+                    android:gravity="center">
+
+                <Button
+                        android:id="@+id/seeMore"
+                        android:layout_width="100dp"
+                        android:text="Read More"
+                        android:textColor="#303D81"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                <Button
+                        android:id="@+id/seeLess"
+                        android:text="Read Less"
+                        android:textColor="#303D81"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:visibility="gone"
+                        android:focusable="true"/>
+
+            </LinearLayout>
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_marginTop="30dp"
+                      android:textColor="#1a1a1a"
+                      android:layout_gravity="center"
+                      android:layout_marginBottom="10dp"
+                      android:text="Movie Cast"
+                      android:textSize="30sp"
+                      android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/rview" />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_marginTop="30dp"
+                      android:textColor="#1a1a1a"
+                      android:layout_gravity="center"
+                      android:layout_marginBottom="10dp"
+                      android:text="TV Cast"
+                      android:textSize="30sp"
+                      android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/rview1" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

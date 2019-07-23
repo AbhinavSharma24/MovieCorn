@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1012524941053",
+    "firebase_url": "https://imdb-clone-26fee.firebaseio.com",
+    "project_id": "imdb-clone-26fee",
+    "storage_bucket": "imdb-clone-26fee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012524941053:android:290c149e72b329c8",
+        "android_client_info": {
+          "package_name": "com.example.imdbclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012524941053-7lc6gua4751q41u8ve0uil4kmk9f4tg9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.imdbclone",
+            "certificate_hash": "7c1cbac71291df22d3abf698e98f9946f03bdd75"
+          }
+        },
+        {
+          "client_id": "1012524941053-vv2draa9p590rkfjhdehrpfo38ap6qqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5ToRQVbr1Z7v5Qip-DbX5gN_bfBxaf60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012524941053-vv2draa9p590rkfjhdehrpfo38ap6qqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

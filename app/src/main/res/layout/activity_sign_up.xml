@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="center"
+        android:background="@drawable/poster2"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Others.SignUpActivity">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:hint="Full Name"
+                android:gravity="center"
+                android:id="@+id/fullname"
+                android:layout_margin="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#111"
+                    android:hint="Full Name"
+                    android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Email Address"
+            android:gravity="center"
+            android:id="@+id/emailaddress"
+            android:layout_margin="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textColor="#111"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Username"
+            android:gravity="center"
+            android:id="@+id/signupusername"
+            android:layout_margin="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textColor="#111"
+                android:hint="Username"
+                android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Password"
+            android:gravity="center"
+            android:id="@+id/signuppassword"
+            android:layout_margin="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textColor="#111"
+                app:passwordToggleEnabled="true"
+                android:hint="Password"
+                android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+                android:id="@+id/signupbtn1"
+                android:text="SIGNUP"
+                android:background="#1a1a1a"
+                android:textSize="30sp"
+                android:textColor="#E6E2E2"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
