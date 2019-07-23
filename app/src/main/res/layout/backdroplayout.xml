@@ -51,6 +51,7 @@
     <ImageView android:layout_width="360dp"
                android:layout_height="250dp"
                android:id="@+id/img"
+               android:background="@drawable/loading"
                android:layout_marginBottom="10dp"
                android:layout_gravity="bottom"
                android:layout_marginRight="10dp"

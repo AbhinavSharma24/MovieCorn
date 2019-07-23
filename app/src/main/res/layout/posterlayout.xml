@@ -52,6 +52,7 @@
                android:layout_gravity="bottom"
                android:layout_marginBottom="10dp"
                android:id="@+id/img2"
+               android:background="#DFDBD8"
                android:layout_marginLeft="10dp"
                android:layout_marginRight="10dp"/>
 

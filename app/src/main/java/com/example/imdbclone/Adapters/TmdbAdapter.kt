@@ -41,7 +41,7 @@ class TmdbAdapter( val context: Context, private val arrayList: ArrayList<TmdbRe
             }
         }
 
-        @SuppressLint("SimpleDateFormat")
+        @SuppressLint("SimpleDateFormat", "SetTextI18n")
         fun bind(user: TmdbResponse, position: Int) {
             this.currentuser = user
             this.currentposition = position
@@ -49,6 +49,10 @@ class TmdbAdapter( val context: Context, private val arrayList: ArrayList<TmdbRe
                 titletv.text = user.title
                 ratingtv.text = "⭐ " + user.vote_average.toString() + "/10"
                 Picasso.get().load("https://image.tmdb.org/t/p/original" + user.backdrop_path).fit().centerCrop().into(img)
+
+                if(user.backdrop_path == null){
+                    Picasso.get().load("https://fasterthemes.com/demo/foodrecipespro-wordpress-theme/wp-content/themes/foodrecipespro/images/no-image.jpg").fit().centerCrop().into(img)
+                }
 
                 ib1blank.setOnClickListener {
                     ib1filled.visibility = View.VISIBLE

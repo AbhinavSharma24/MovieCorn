@@ -60,11 +60,20 @@
             <TextView android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:text="Now Showing"
+                      android:layout_marginBottom="-40dp"
                       android:textColor="#1a1a1a"
                       android:textStyle="bold"
                       android:gravity="center"
-                      android:textSize="30sp"
-                      android:layout_marginBottom="10dp"/>
+                      android:textSize="30sp"/>
+
+            <Button
+                    android:id="@+id/viewAll1"
+                    android:text="View All"
+                    android:background="@null"
+                    android:layout_gravity="right"
+                    android:textColor="#0F4D45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
             <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="wrap_content"
@@ -75,12 +84,21 @@
             <TextView android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:text="Popular"
-                      android:layout_marginBottom="10dp"
-                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="-40dp"
+                      android:layout_marginTop="30dp"
                       android:gravity="center"
                       android:textColor="#1a1a1a"
                       android:textStyle="bold"
                       android:textSize="30sp"/>
+
+            <Button
+                    android:id="@+id/viewAll2"
+                    android:text="View All"
+                    android:background="@null"
+                    android:layout_gravity="right"
+                    android:textColor="#0F4D45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
             <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="wrap_content"
@@ -91,13 +109,22 @@
             <TextView android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:text="Upcoming"
+                      android:layout_marginBottom="-40dp"
                       android:textColor="#1a1a1a"
                       android:textStyle="bold"
-                      android:layout_marginBottom="10dp"
                       android:gravity="center"
                       android:textSize="30sp"
                       android:layout_marginLeft="10dp"
-                      android:layout_marginTop="30dp"/>
+                      android:layout_marginTop="40dp"/>
+
+            <Button
+                    android:id="@+id/viewAll3"
+                    android:text="View All"
+                    android:background="@null"
+                    android:layout_gravity="right"
+                    android:textColor="#0F4D45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
             <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="wrap_content"
@@ -108,12 +135,21 @@
             <TextView android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:text="Top Rated"
-                      android:layout_marginBottom="10dp"
-                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="-40dp"
+                      android:layout_marginTop="30dp"
                       android:textColor="#1a1a1a"
                       android:gravity="center"
                       android:textStyle="bold"
                       android:textSize="30sp"/>
+
+            <Button
+                    android:id="@+id/viewAll4"
+                    android:text="View All"
+                    android:background="@null"
+                    android:layout_gravity="right"
+                    android:textColor="#0F4D45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
             <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="wrap_content"

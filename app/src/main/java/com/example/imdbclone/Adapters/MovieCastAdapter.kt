@@ -46,6 +46,10 @@ class Moviecastadapter(val context: Context, private val arrayList: ArrayList<Mo
                 ratingtv.text = "As " + user.character
                 Picasso.get().load("https://image.tmdb.org/t/p/w500" + user.poster_path).fit().centerCrop().into(img2)
 
+                if(user.poster_path == null){
+                    Picasso.get().load("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png").into(img2)
+                }
+
                 ib3blank.setOnClickListener {
                     ib3filled.visibility = View.VISIBLE
                     ib3blank.visibility = View.GONE

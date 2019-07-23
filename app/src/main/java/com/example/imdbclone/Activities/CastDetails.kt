@@ -49,6 +49,9 @@ class CastDetails : AppCompatActivity() {
                 runOnUiThread {
                     Picasso.get().load("https://image.tmdb.org/t/p/w500" + response.body()?.profile_path).fit().centerCrop().into(img1)
                     progressBar.visibility = View.GONE
+                    if(response.body()?.profile_path == null){
+                        Picasso.get().load("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png").into(img1)
+                    }
                 }
             }
         })
@@ -66,7 +69,7 @@ class CastDetails : AppCompatActivity() {
                     //toolbar.title=response.body()?.name
                     if(response.body()?.birthday != null && response.body()?.place_of_birth != null && response.body()?.biography != null) {
                         val age = 2019 - response.body()?.birthday?.substring(0, 4)!!.toInt()
-                        tv.text = "\n\nName : " + response.body()?.name + "\n\nAge : " + age + "\nBirthPlace : " + response.body()?.place_of_birth +
+                        tv.text = "\nName : " + response.body()?.name + "\n\nAge : " + age + "\nBirthPlace : " + response.body()?.place_of_birth +
                                 "\n\nBiography :-\n" + response.body()?.biography
                     }else{
                         tv.text = "No Information Available"

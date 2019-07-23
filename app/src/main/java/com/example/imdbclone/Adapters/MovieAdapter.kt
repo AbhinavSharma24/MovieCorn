@@ -45,8 +45,7 @@ class MovieAdapter(val context: Context, private val arrayList: ArrayList<MovieD
                 Picasso.get().load("https://image.tmdb.org/t/p/w500" + user.profile_path).fit().centerCrop().into(img)
                 if (user.profile_path == null) {
                     Picasso.get().load(
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaYY" +
-                                "JV4KmiKJQY19WvKPIcHGFTx_b4IF13cwjAGtnPx-r2Syl1"
+                        "https://wingslax.com/wp-content/uploads/2017/12/no-image-available.png"
                     ).into(img)
                 }
             }

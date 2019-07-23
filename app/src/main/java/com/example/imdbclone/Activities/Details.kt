@@ -4,14 +4,19 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.imdbclone.*
 import com.example.imdbclone.Adapters.MovieAdapter
 import com.example.imdbclone.Adapters.MovieAdapter2
 import com.example.imdbclone.Adapters.TmdbAdapter2
 import com.example.imdbclone.Others.*
+import com.google.android.youtube.player.YouTubeBaseActivity
+import com.google.android.youtube.player.YouTubeInitializationResult
+import com.google.android.youtube.player.YouTubePlayer
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_details.*
+import kotlinx.android.synthetic.main.backdroplayout.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -46,6 +51,9 @@ class Details : AppCompatActivity() {
                 runOnUiThread {
                     Picasso.get().load("https://image.tmdb.org/t/p/original" + response.body()?.backdrop_path).fit().centerCrop().into(toolbarimage)
                     progressBar.visibility = View.GONE
+                    if(response.body()?.backdrop_path == null){
+                        Picasso.get().load("https://fasterthemes.com/demo/foodrecipespro-wordpress-theme/wp-content/themes/foodrecipespro/images/no-image.jpg").fit().centerCrop().into(toolbarimage)
+                    }
                 }
             }
         })
@@ -84,8 +92,7 @@ class Details : AppCompatActivity() {
             ) {
                 runOnUiThread {
                     rview3.layoutManager = LinearLayoutManager(this@Details, LinearLayoutManager.HORIZONTAL,false)
-                    rview3.adapter =
-                            MovieAdapter2(this@Details, response.body()!!.results)
+                    rview3.adapter = MovieAdapter2(this@Details, response.body()!!.results)
                 }
             }
         })

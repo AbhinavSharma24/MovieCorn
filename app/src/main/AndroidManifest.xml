@@ -4,6 +4,9 @@
           package="com.example.imdbclone">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
             android:allowBackup="true"
@@ -13,6 +16,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activities.ViewAll">
+        </activity>
         <activity android:name=".Activities.SearchTv">
         </activity>
         <activity android:name=".Activities.DetailsTv">
@@ -52,6 +57,7 @@
             </intent-filter>
             -->
         </activity>
+        <activity android:name=".Adapters.VideoView"/>
     </application>
 
 </manifest>

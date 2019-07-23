@@ -45,6 +45,9 @@ class DetailsTv : AppCompatActivity() {
                 runOnUiThread {
                     Picasso.get().load("https://image.tmdb.org/t/p/original" + response.body()?.backdrop_path).fit().centerCrop().into(toolbarimage)
                     progressBar.visibility = View.GONE
+                    if(response.body()?.backdrop_path == null){
+                        Picasso.get().load("https://fasterthemes.com/demo/foodrecipespro-wordpress-theme/wp-content/themes/foodrecipespro/images/no-image.jpg").fit().centerCrop().into(toolbarimage)
+                    }
                 }
             }
         })

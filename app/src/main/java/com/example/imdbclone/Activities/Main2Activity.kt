@@ -129,6 +129,19 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
             }
         }*/
 
+        /*viewAll1.setOnClickListener {
+            startActivity(Intent(this@Main2Activity,ViewAll::class.java))
+        }*/
+        viewAll2.setOnClickListener {
+            startActivity(Intent(this@Main2Activity,ViewAll::class.java))
+        }
+        /*viewAll3.setOnClickListener {
+            startActivity(Intent(this@Main2Activity,ViewAll::class.java))
+        }
+        viewAll4.setOnClickListener {
+            startActivity(Intent(this@Main2Activity,ViewAll::class.java))
+        }*/
+
 
         val toggle = ActionBarDrawerToggle(
             this, drawer_layout, toolbar1,
