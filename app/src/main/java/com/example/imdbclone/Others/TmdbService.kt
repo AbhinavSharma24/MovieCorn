@@ -28,6 +28,9 @@ interface GithubService {
     @GET("{Id}/videos?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US&page=1")
     fun trailers(@Path("Id")id:Int): Call<Trailerarray>
 
+    @GET("{Id}/videos?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US&page=1")
+    fun trailersYT(@Path("Id")id:Int): Call<Trailers>
+
     @GET("{Id}?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US")
     fun overview(@Path("Id")id:Int):Call<Overview>
 

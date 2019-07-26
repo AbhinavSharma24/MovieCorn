@@ -4,19 +4,14 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.imdbclone.*
 import com.example.imdbclone.Adapters.MovieAdapter
 import com.example.imdbclone.Adapters.MovieAdapter2
 import com.example.imdbclone.Adapters.TmdbAdapter2
 import com.example.imdbclone.Others.*
-import com.google.android.youtube.player.YouTubeBaseActivity
-import com.google.android.youtube.player.YouTubeInitializationResult
-import com.google.android.youtube.player.YouTubePlayer
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_details.*
-import kotlinx.android.synthetic.main.backdroplayout.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -29,6 +24,7 @@ class Details : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
+
         setSupportActionBar(toolbar33)
         supportActionBar?.title = "Movie Details"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
