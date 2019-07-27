@@ -119,7 +119,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
                 }
             }
         })
-        /*searchbutton.setOnClickListener {
+        /*searchButton.setOnClickListener {
             val a = Intent(this,Search::class.java)
             a.putExtra("Search Text",et.text.toString())
             if(et.text.toString() != "") {
@@ -130,28 +130,16 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         }*/
 
         viewAll1.setOnClickListener {
-            val a=Intent(this,ViewAll::class.java)
-            a.putExtra("category","nowshowing")
-            startActivity(a)
-            //startActivity(Intent(this@Main2Activity,ViewAll::class.java))
+            startActivity(Intent(this@Main2Activity,ViewAll::class.java).putExtra("category","nowshowing"))
         }
         viewAll2.setOnClickListener {
-            /*val a=Intent(this,ViewAll::class.java)
-            a.putExtra("category","popular")
-            startActivity(a)*/
             startActivity(Intent(this@Main2Activity,ViewAll::class.java).putExtra("category","popular"))
         }
         viewAll3.setOnClickListener {
-            val a=Intent(this,ViewAll::class.java)
-            a.putExtra("category","upcoming")
-            startActivity(a)
-            //startActivity(Intent(this@Main2Activity,ViewAll::class.java))
+            startActivity(Intent(this@Main2Activity,ViewAll::class.java).putExtra("category","upcoming"))
         }
         viewAll4.setOnClickListener {
-            val a=Intent(this,ViewAll::class.java)
-            a.putExtra("category","toprated")
-            startActivity(a)
-            //startActivity(Intent(this@Main2Activity,ViewAll::class.java))
+            startActivity(Intent(this@Main2Activity,ViewAll::class.java).putExtra("category","toprated"))
         }
 
 
