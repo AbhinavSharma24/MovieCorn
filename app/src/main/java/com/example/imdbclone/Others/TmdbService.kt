@@ -10,7 +10,7 @@ interface GithubService {
     @GET("now_playing?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US&page=1")
     fun nowShowing(): Call<Tmdb2>
 
-    @GET("popular?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US")
+    @GET("popular?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US&page=1")
     fun popularMovies(): Call<Tmdb2>
 
     @GET("upcoming?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US&region=US&page=1")
@@ -28,8 +28,8 @@ interface GithubService {
     @GET("{Id}/videos?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US&page=1")
     fun trailers(@Path("Id")id:Int): Call<Trailerarray>
 
-    @GET("{Id}/videos?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US&page=1")
-    fun trailersYT(@Path("Id")id:Int): Call<Trailers>
+    /*@GET("{Id}/videos?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US&page=1")
+    fun trailersYT(@Path("Id")id:Int): Call<Trailers>*/
 
     @GET("{Id}?api_key=20ddfcf94f3bf96b48118c43a689756c&language=en-US")
     fun overview(@Path("Id")id:Int):Call<Overview>

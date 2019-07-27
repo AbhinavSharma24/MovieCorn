@@ -129,18 +129,30 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
             }
         }*/
 
-        /*viewAll1.setOnClickListener {
-            startActivity(Intent(this@Main2Activity,ViewAll::class.java))
-        }*/
-        viewAll2.setOnClickListener {
-            startActivity(Intent(this@Main2Activity,ViewAll::class.java))
+        viewAll1.setOnClickListener {
+            val a=Intent(this,ViewAll::class.java)
+            a.putExtra("category","nowshowing")
+            startActivity(a)
+            //startActivity(Intent(this@Main2Activity,ViewAll::class.java))
         }
-        /*viewAll3.setOnClickListener {
-            startActivity(Intent(this@Main2Activity,ViewAll::class.java))
+        viewAll2.setOnClickListener {
+            /*val a=Intent(this,ViewAll::class.java)
+            a.putExtra("category","popular")
+            startActivity(a)*/
+            startActivity(Intent(this@Main2Activity,ViewAll::class.java).putExtra("category","popular"))
+        }
+        viewAll3.setOnClickListener {
+            val a=Intent(this,ViewAll::class.java)
+            a.putExtra("category","upcoming")
+            startActivity(a)
+            //startActivity(Intent(this@Main2Activity,ViewAll::class.java))
         }
         viewAll4.setOnClickListener {
-            startActivity(Intent(this@Main2Activity,ViewAll::class.java))
-        }*/
+            val a=Intent(this,ViewAll::class.java)
+            a.putExtra("category","toprated")
+            startActivity(a)
+            //startActivity(Intent(this@Main2Activity,ViewAll::class.java))
+        }
 
 
         val toggle = ActionBarDrawerToggle(

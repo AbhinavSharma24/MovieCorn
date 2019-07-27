@@ -35,24 +35,86 @@ class ViewAll : AppCompatActivity() {
             .build()
 
         val service = retrofitClient.create(GithubService::class.java)
-        service.popularMovies().enqueue(object : Callback<Tmdb2> {
-            override fun onFailure(call: Call<Tmdb2>, t: Throwable) {
-                //tv.text="Loading failed!"
-                progressBar.visibility = View.GONE
-            }
 
-            override fun onResponse(
-                call: Call<Tmdb2>,
-                response: Response<Tmdb2>
-            ) {
-                runOnUiThread {
-                    rvViewAll.layoutManager = GridLayoutManager(this@ViewAll, 3, RecyclerView.VERTICAL, false)
-                    rvViewAll?.adapter = ViewAllAdapter(this@ViewAll, response.body()!!.results)
-                    progressBar.visibility=View.GONE
-                }
-            }
-        })
+        val p = intent.getStringExtra("category")
 
+        when(p) {
+            "nowshowing" ->
+                service.nowShowing().enqueue(object : Callback<Tmdb2> {
+                    override fun onFailure(call: Call<Tmdb2>, t: Throwable) {
+                        //tv.text="Loading failed!"
+                        progressBar.visibility = View.GONE
+                    }
+
+                    override fun onResponse(
+                        call: Call<Tmdb2>,
+                        response: Response<Tmdb2>
+                    ) {
+                        runOnUiThread {
+                            rvViewAll.layoutManager = GridLayoutManager(this@ViewAll, 3, RecyclerView.VERTICAL, false)
+                            rvViewAll?.adapter = ViewAllAdapter(this@ViewAll, response.body()!!.results)
+                            progressBar.visibility = View.GONE
+                        }
+                    }
+                })
+
+            "popular" ->
+                service.popularMovies().enqueue(object : Callback<Tmdb2> {
+                    override fun onFailure(call: Call<Tmdb2>, t: Throwable) {
+                        //tv.text="Loading failed!"
+                        progressBar.visibility = View.GONE
+                    }
+
+                    override fun onResponse(
+                        call: Call<Tmdb2>,
+                        response: Response<Tmdb2>
+                    ) {
+                        runOnUiThread {
+                            rvViewAll.layoutManager = GridLayoutManager(this@ViewAll, 3, RecyclerView.VERTICAL, false)
+                            rvViewAll?.adapter = ViewAllAdapter(this@ViewAll, response.body()!!.results)
+                            progressBar.visibility = View.GONE
+                        }
+                    }
+                })
+
+            "upcoming" ->
+                service.upcoming().enqueue(object : Callback<Tmdb2> {
+                    override fun onFailure(call: Call<Tmdb2>, t: Throwable) {
+                        //tv.text="Loading failed!"
+                        progressBar.visibility = View.GONE
+                    }
+
+                    override fun onResponse(
+                        call: Call<Tmdb2>,
+                        response: Response<Tmdb2>
+                    ) {
+                        runOnUiThread {
+                            rvViewAll.layoutManager = GridLayoutManager(this@ViewAll, 3, RecyclerView.VERTICAL, false)
+                            rvViewAll?.adapter = ViewAllAdapter(this@ViewAll, response.body()!!.results)
+                            progressBar.visibility = View.GONE
+                        }
+                    }
+                })
+
+            "toprated" ->
+                service.toprated().enqueue(object : Callback<Tmdb2> {
+                    override fun onFailure(call: Call<Tmdb2>, t: Throwable) {
+                        //tv.text="Loading failed!"
+                        progressBar.visibility = View.GONE
+                    }
+
+                    override fun onResponse(
+                        call: Call<Tmdb2>,
+                        response: Response<Tmdb2>
+                    ) {
+                        runOnUiThread {
+                            rvViewAll.layoutManager = GridLayoutManager(this@ViewAll, 3, RecyclerView.VERTICAL, false)
+                            rvViewAll?.adapter = ViewAllAdapter(this@ViewAll, response.body()!!.results)
+                            progressBar.visibility = View.GONE
+                        }
+                    }
+                })
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

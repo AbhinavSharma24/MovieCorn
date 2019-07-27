@@ -42,7 +42,7 @@ class SearchAdapterTv(val context: Context, private val arrayList: ArrayList<Sea
                 titletv.text = user.name
                 releasetv.text = "First Air Date: "+user.first_air_date
                 overviewtv.text="\n"+user.overview
-                Picasso.get().load("https://image.tmdb.org/t/p/w500" + user.poster_path).fit().centerCrop().into(img)
+                Picasso.get().load("https://image.tmdb.org/t/p/w500" + user.poster_path).into(img)
 
             }
 
