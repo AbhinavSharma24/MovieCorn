@@ -11,6 +11,7 @@
     <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar33"
             app:titleTextColor="#E6E2E2"
+            app:title="YouTube Trailer (IMDBclone)"
             android:background="#1a1a1a"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"/>
@@ -33,16 +34,24 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:textSize="22dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:text="Playing Youtube video in IMDb Clone app" />
 
 
-    <fragment
+    <!--<fragment
             android:layout_below="@+id/video_play_text"
             android:id="@+id/youtube_player_fragment"
             android:layout_gravity="center"
             android:name="com.google.android.youtube.player.YouTubePlayerFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"/>-->
+
+    <com.google.android.youtube.player.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/youtube_player_fragment">
+
+    </com.google.android.youtube.player.YouTubePlayerView>
 
 </LinearLayout>

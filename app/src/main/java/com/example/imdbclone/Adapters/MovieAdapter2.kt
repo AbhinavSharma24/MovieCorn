@@ -45,7 +45,12 @@ class GithubViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             bt.setOnClickListener {
                 /*val j= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v="+user.key))
                 context.startActivity(j)*/
-                val j = Intent(context, Youtube::class.java)
+                /*val j = Intent(context, Youtube::class.java)
+                context.startActivity(j)*/
+
+                val j=Intent(context,Youtube::class.java)
+                j.putExtra("path",user.key)
+//                val j= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v="+user.key))
                 context.startActivity(j)
 
             }
