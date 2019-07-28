@@ -16,7 +16,7 @@
                 android:hint="Full Name"
                 android:gravity="center"
                 android:id="@+id/fullname"
-                android:layout_margin="16dp"
+                android:layout_margin="15dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_height="wrap_content">
 
@@ -33,7 +33,7 @@
             android:hint="Email Address"
             android:gravity="center"
             android:id="@+id/emailaddress"
-            android:layout_margin="16dp"
+            android:layout_margin="15dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_height="wrap_content">
 
@@ -50,7 +50,7 @@
             android:hint="Username"
             android:gravity="center"
             android:id="@+id/signupusername"
-            android:layout_margin="16dp"
+            android:layout_margin="15dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_height="wrap_content">
 
@@ -67,7 +67,7 @@
             android:hint="Password"
             android:gravity="center"
             android:id="@+id/signuppassword"
-            android:layout_margin="16dp"
+            android:layout_margin="15dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_height="wrap_content">
 
