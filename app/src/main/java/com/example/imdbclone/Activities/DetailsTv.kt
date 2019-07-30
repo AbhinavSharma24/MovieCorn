@@ -93,7 +93,7 @@ class DetailsTv : AppCompatActivity() {
 
         service.castTv(pos).enqueue(object : Callback<Cast> {
             override fun onFailure(call: Call<Cast>, t: Throwable) {
-                tv.text="Loading failed!"
+                tv.text="Loading Failed !!!"
             }
             override fun onResponse(
                 call: Call<Cast>,
@@ -108,7 +108,7 @@ class DetailsTv : AppCompatActivity() {
 
         service.similarTv(pos).enqueue(object : Callback<TmdbTv> {
             override fun onFailure(call: Call<TmdbTv>, t: Throwable) {
-                tv.text="Loading failed!"
+                tv.text="Loading Failed !!!"
             }
 
             override fun onResponse(

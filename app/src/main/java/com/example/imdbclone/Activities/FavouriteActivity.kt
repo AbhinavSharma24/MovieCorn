@@ -11,7 +11,7 @@ class FavouriteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favourite)
         setSupportActionBar(abouttoolbar)
-        supportActionBar?.title = "Favourites"
+        supportActionBar?.title = "Favourite Movies/TV-Shows"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
