@@ -181,7 +181,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
                 if (query != "") {
                     startActivity(a)
                 } else {
-                    Toast.makeText(this@Main2Activity, "Write something in search bar !!!", Toast.LENGTH_SHORT)
+                    Toast.makeText(this@Main2Activity, "Write something to search !!!", Toast.LENGTH_SHORT)
                         .show()
                 }
                 return false
@@ -196,7 +196,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_profile -> {
-                Toast.makeText(this,"Profile will be available after SignIn/SignOut part is completed.",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"User profile will be available after SignIn/SignOut part is completed.",Toast.LENGTH_SHORT).show()
                 true
             }
             else -> super.onOptionsItemSelected(item)
@@ -212,7 +212,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
                 startActivity(Intent(this,TVShowsActivity::class.java))
             }
             R.id.nav_favourite -> {
-                Toast.makeText(this,"Feature Coming Soon !!!",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Halt, Feature Coming Soon !!!",Toast.LENGTH_SHORT).show()
                 //startActivity(Intent(this,FavouriteActivity::class.java))
             }
             R.id.nav_about -> {

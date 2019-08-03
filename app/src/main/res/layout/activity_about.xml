@@ -24,21 +24,30 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content">
 
-    <ImageView
-            android:src="@drawable/logo"
-            android:layout_width="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_height="100dp"/>
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_height="wrap_content">
 
-    <TextView
-            android:textColor="#1a1a1a"
-            android:textSize="55dp"
-            android:text="IMDb Clone"
-            android:textStyle="bold|italic"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
 
+            <ImageView
+                    android:src="@drawable/logo"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="100dp"/>
+
+            <TextView
+                    android:textColor="#1a1a1a"
+                    android:textSize="55dp"
+                    android:text="IMDb Clone"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold|italic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
     <!--<TextView
@@ -62,6 +71,18 @@
             android:text="Developed By :- ABHINAV SHARMA"
             android:layout_width="match_parent"
             android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:textColor="#2C3D99"
+            android:textSize="15dp"
+            android:id="@+id/github"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:text="https://github.com/AbhinavSharma24"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
     <TextView

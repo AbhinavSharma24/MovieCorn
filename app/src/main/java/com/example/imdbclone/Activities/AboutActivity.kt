@@ -1,5 +1,7 @@
 package com.example.imdbclone.Activities
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.imdbclone.R
@@ -15,6 +17,10 @@ class AboutActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        github.setOnClickListener {
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/AbhinavSharma24"))
+            startActivity(i)
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
