@@ -1,4 +1,4 @@
-package com.example.imdbclone.Others
+package com.example.imdbclone.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

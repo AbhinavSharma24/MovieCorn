@@ -30,9 +30,9 @@
         </activity>
         <activity android:name=".Activities.AboutActivity">
         </activity>
-        <activity android:name=".Others.SignUpActivity">
+        <activity android:name=".Activities.SignUpActivity">
         </activity>
-        <activity android:name=".Others.SignInActivity">
+        <activity android:name=".Activities.SignInActivity">
         </activity>
         <activity
                 android:name=".Activities.Main2Activity"

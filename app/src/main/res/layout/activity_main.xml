@@ -42,7 +42,7 @@
                         android:layout_height="wrap_content"
                         android:background="#1a1a1a"
                         android:textColor="#C9C2C2"
-                        android:id="@+id/searchbutton"
+                        android:id="@+id/searchButton"
                         android:text="Search"
                         android:layout_toRightOf="@+id/et"/>
 

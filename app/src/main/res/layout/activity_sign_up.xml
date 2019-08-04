@@ -8,7 +8,7 @@
         android:background="@drawable/poster2"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".Others.SignUpActivity">
+        tools:context=".Activities.SignUpActivity">
 
 
         <com.google.android.material.textfield.TextInputLayout
