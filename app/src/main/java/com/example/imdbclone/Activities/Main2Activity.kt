@@ -88,7 +88,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         })
         service.upcoming().enqueue(object : Callback<Tmdb2> {
             override fun onFailure(call: Call<Tmdb2>, t: Throwable) {
-                tv.text="Loading failed!"
+                tv.text="Loading Failed !!!"
             }
             override fun onResponse(
                 call: Call<Tmdb2>,
@@ -105,7 +105,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         })
         service.toprated().enqueue(object : Callback<Tmdb2> {
             override fun onFailure(call: Call<Tmdb2>, t: Throwable) {
-                tv.text="Loading failed!"
+                tv.text="Loading Failed !!!"
                 //et.visibility = "gone".toInt()
             }
             override fun onResponse(
@@ -212,7 +212,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
                 startActivity(Intent(this,TVShowsActivity::class.java))
             }
             R.id.nav_favourite -> {
-                Toast.makeText(this,"Halt, Feature Coming Soon !!!",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Feature Coming Soon !!!",Toast.LENGTH_SHORT).show()
                 //startActivity(Intent(this,FavouriteActivity::class.java))
             }
             R.id.nav_about -> {
