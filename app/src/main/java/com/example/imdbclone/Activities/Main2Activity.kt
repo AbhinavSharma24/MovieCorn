@@ -72,7 +72,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
         service.popularMovies().enqueue(object : Callback<Tmdb2> {
             override fun onFailure(call: Call<Tmdb2>, t: Throwable) {
-                tv.text="Loading failed!"
+                tv.text="Loading Failed !!!"
             }
             override fun onResponse(
                 call: Call<Tmdb2>,

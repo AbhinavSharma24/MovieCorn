@@ -42,11 +42,14 @@ class SignInActivity : AppCompatActivity() {
                     signinbtn.isEnabled = false
                 }.addOnSuccessListener {
                     signinbtn.isEnabled = true
-                    Toast.makeText(this, "Account Created Successfully", Toast.LENGTH_LONG).show()
-                    startActivity(Intent(this@SignInActivity,Main2Activity::class.java))
+                    Toast.makeText(this, "Account Created Succesfully", Toast.LENGTH_LONG).show()
+
                 }.addOnFailureListener {
                     signinbtn.isEnabled = true
                     Toast.makeText(this, it.localizedMessage, Toast.LENGTH_LONG).show()
+                    if (it.localizedMessage.contains("use", true)) {
+                        //loginUser()
+                    }
                 }
             }
         }
