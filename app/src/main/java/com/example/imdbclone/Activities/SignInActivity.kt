@@ -30,10 +30,10 @@ class SignInActivity : AppCompatActivity() {
         signinbtn.setOnClickListener {
             if (email.editText?.text.isNullOrEmpty()) {
                 email.isErrorEnabled = true
-                email.error = "Cannot be Empty"
+                email.error = "Cannot be Empty!"
             } else if (password.editText?.text.isNullOrEmpty()) {
                 password.isErrorEnabled = true
-                password.error = "Cannot be Empty"
+                password.error = "Cannot be Empty!"
             } else {
                 auth.createUserWithEmailAndPassword(
                     email.editText?.text.toString(),

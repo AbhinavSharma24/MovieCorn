@@ -32,7 +32,7 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="340dp"
                 android:layout_height="wrap_content"
-                android:textColor="#111"
+                android:textColor="#111111"
                 android:hint="Email-Address"
                 android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -54,7 +54,7 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="340dp"
                 android:layout_height="wrap_content"
-                android:textColor="#111"
+                android:textColor="#111111"
                 android:inputType="textPassword"
                 android:hint="Password"/>
     </com.google.android.material.textfield.TextInputLayout>

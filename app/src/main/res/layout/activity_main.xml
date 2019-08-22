@@ -59,7 +59,7 @@
 
             <TextView android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="Now Showing"
+                      android:text="Now Showing "
                       android:layout_marginBottom="-40dp"
                       android:textColor="#1a1a1a"
                       android:textStyle="bold"
@@ -83,7 +83,7 @@
 
             <TextView android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="Popular"
+                      android:text="Popular "
                       android:layout_marginBottom="-40dp"
                       android:layout_marginTop="30dp"
                       android:gravity="center"
