@@ -35,7 +35,7 @@
             android:layout_marginTop="22dp"
             android:textSize="22dp"
             android:layout_marginBottom="10dp"
-            android:text="Playing YouTube video in IMDb Clone app" />
+            android:text="Playing YouTube video in IMDb Clone App" />
 
 
     <!--<fragment

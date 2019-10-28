@@ -59,7 +59,7 @@ class SearchTv : AppCompatActivity() {
         service.searchtv(text).enqueue(object : Callback<Searcharray> {
             @SuppressLint("SetTextI18n")
             override fun onFailure(call: Call<Searcharray>, t: Throwable) {
-                tv.text = "Loading failed!"
+                tv.text = "Loading failed!!!"
                 tv.text = tv.text.toString() + t.cause.toString()
             }
             override fun onResponse(
