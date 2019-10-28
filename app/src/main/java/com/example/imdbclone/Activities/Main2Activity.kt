@@ -212,7 +212,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
                 startActivity(Intent(this,TVShowsActivity::class.java))
             }
             R.id.nav_favourite -> {
-                Toast.makeText(this,"Halt! Feature Coming Soon !!!",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Feature Coming Soon !!!",Toast.LENGTH_SHORT).show()
                 //startActivity(Intent(this,FavouriteActivity::class.java))
             }
             R.id.nav_about -> {
