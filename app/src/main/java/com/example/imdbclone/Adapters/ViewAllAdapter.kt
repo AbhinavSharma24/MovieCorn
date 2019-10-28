@@ -1,5 +1,6 @@
 package com.example.imdbclone.Adapters
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -36,12 +37,15 @@ class ViewAllAdapter( val context: Context, private val arrayList: ArrayList<Tmd
             }
         }
 
+        @SuppressLint("SetTextI18n")
         fun bind(user: TmdbResponse, position: Int) {
             this.currentuser = user
             with(itemView) {
                 name.text = user.title
                 rating.text = "⭐ " + user.vote_average.toString() + "/10"
-                Picasso.get().load("https://image.tmdb.org/t/p/w500" + user.poster_path).fit().centerCrop().into(imgViewAll)
+                Picasso.get().load("https://image.tmdb.org/t/p/w500" + user.poster_path)
+                    .fit().centerCrop()
+                    .into(imgViewAll)
             }
         }
     }

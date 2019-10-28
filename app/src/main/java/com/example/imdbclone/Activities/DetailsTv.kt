@@ -77,7 +77,7 @@ class DetailsTv : AppCompatActivity() {
 
         service.trailers(pos).enqueue(object : Callback<Trailerarray> {
             override fun onFailure(call: Call<Trailerarray>, t: Throwable) {
-                tv.text="Loading failed!"
+                tv.text="Loading failed!!!"
             }
             override fun onResponse(
                 call: Call<Trailerarray>,
